@@ -1,0 +1,29 @@
+# Pedestrian Detection Configuration
+# This file contains default settings for the pedestrian detection system
+
+model:
+  model_path: "yolov8n.pt"
+  confidence_threshold: 0.5
+  device: "cpu"
+  input_size: 640
+
+ui:
+  title: "Pedestrian Detection System"
+  theme: "light"
+  max_file_size_mb: 10
+  supported_formats:
+    - ".jpg"
+    - ".jpeg"
+    - ".png"
+    - ".bmp"
+    - ".tiff"
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_path: "logs/detection.log"
+
+# Directory settings
+data_dir: "data"
+output_dir: "outputs"
+temp_dir: "temp"
